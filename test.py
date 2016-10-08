@@ -15,10 +15,12 @@ def main ():
 def getJsonLoad (text):
     # 引数は標準出力を想定。
     try:
-        json.load (text)
+        data = json.loads (text)
         print ("JSON LOAD")
+        return data
     except:
         print ("BAD JSON")
+        return False
     
 
 
