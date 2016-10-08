@@ -1,0 +1,130 @@
+{
+	"start":	{
+		"connected":	[{
+				"socket":	4,
+				"local_host":	"192.168.0.5",
+				"local_port":	55650,
+				"remote_host":	"203.178.143.162",
+				"remote_port":	5201
+			}],
+		"version":	"iperf 3.1.3",
+		"system_info":	"Darwin MacBook-Air.local 15.6.0 Darwin Kernel Version 15.6.0: Mon Aug 29 20:21:34 PDT 2016; root:xnu-3248.60.11~1/RELEASE_X86_64 x86_64",
+		"timestamp":	{
+			"time":	"Fri, 07 Oct 2016 20:15:08 GMT",
+			"timesecs":	1475871308
+		},
+		"connecting_to":	{
+			"host":	"203.178.143.162",
+			"port":	5201
+		},
+		"cookie":	"MacBook-Air.local.1475871308.031736.",
+		"tcp_mss_default":	1448,
+		"test_start":	{
+			"protocol":	"TCP",
+			"num_streams":	1,
+			"blksize":	131072,
+			"omit":	0,
+			"duration":	3,
+			"bytes":	0,
+			"blocks":	0,
+			"reverse":	0
+		}
+	},
+	"intervals":	[{
+			"streams":	[{
+					"socket":	4,
+					"start":	0,
+					"end":	1.000101,
+					"seconds":	1.000101,
+					"bytes":	6676784,
+					"bits_per_second":	53408885.657324,
+					"omitted":	false
+				}],
+			"sum":	{
+				"start":	0,
+				"end":	1.000101,
+				"seconds":	1.000101,
+				"bytes":	6676784,
+				"bits_per_second":	53408885.657324,
+				"omitted":	false
+			}
+		}, {
+			"streams":	[{
+					"socket":	4,
+					"start":	1.000101,
+					"end":	2.000125,
+					"seconds":	1.000024,
+					"bytes":	8413296,
+					"bits_per_second":	67304747.283076,
+					"omitted":	false
+				}],
+			"sum":	{
+				"start":	1.000101,
+				"end":	2.000125,
+				"seconds":	1.000024,
+				"bytes":	8413296,
+				"bits_per_second":	67304747.283076,
+				"omitted":	false
+			}
+		}, {
+			"streams":	[{
+					"socket":	4,
+					"start":	2.000125,
+					"end":	3.000120,
+					"seconds":	0.999995,
+					"bytes":	8954432,
+					"bits_per_second":	71635814.665492,
+					"omitted":	false
+				}],
+			"sum":	{
+				"start":	2.000125,
+				"end":	3.000120,
+				"seconds":	0.999995,
+				"bytes":	8954432,
+				"bits_per_second":	71635814.665492,
+				"omitted":	false
+			}
+		}],
+	"end":	{
+		"streams":	[{
+				"sender":	{
+					"socket":	4,
+					"start":	0,
+					"end":	3.000120,
+					"seconds":	3.000120,
+					"bytes":	24044512,
+					"bits_per_second":	64116135.633863
+				},
+				"receiver":	{
+					"socket":	4,
+					"start":	0,
+					"end":	3.000120,
+					"seconds":	3.000120,
+					"bytes":	23880416,
+					"bits_per_second":	63678563.792398
+				}
+			}],
+		"sum_sent":	{
+			"start":	0,
+			"end":	3.000120,
+			"seconds":	3.000120,
+			"bytes":	24044512,
+			"bits_per_second":	64116135.633863
+		},
+		"sum_received":	{
+			"start":	0,
+			"end":	3.000120,
+			"seconds":	3.000120,
+			"bytes":	23880416,
+			"bits_per_second":	63678563.792398
+		},
+		"cpu_utilization_percent":	{
+			"host_total":	13.353717,
+			"host_user":	1.699357,
+			"host_system":	11.654201,
+			"remote_total":	0.020536,
+			"remote_user":	0.006636,
+			"remote_system":	0.013273
+		}
+	}
+}
