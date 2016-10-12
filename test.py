@@ -10,8 +10,9 @@ now =datetime.datetime.today()
 def main ():
     lines = sys.stdin.read()
     # とりあえずJSONを保存しておく。
-    f = open (str(now)+".json","w")
+    f = open ("result/" + str(now)+".json","w")
     f.write (lines)
+    print ("JSON EXPORT")
     f.close
 
     data = getJsonLoad(lines)
