@@ -2,11 +2,18 @@ import sys
 import json
 import numpy as np
 import matplotlib.pyplot as plt
+import datetime
+now =datetime.datetime.today()
 
 
 
 def main ():
     lines = sys.stdin.read()
+    # とりあえずJSONを保存しておく。
+    f = open (str(now)+".json","w")
+    f.write (lines)
+    f.close
+
     data = getJsonLoad(lines)
 
     intervals = data["intervals"]
@@ -31,8 +38,8 @@ def main ():
     for point in points:
         y.append(point[0])
     plt.plot(x, y,label="AVG." + str(avg_sent[0]) + avg_sent[1] )
-    plt.ylabel('スループット [Mbps]')
-    plt.xlabel('経過時間 [秒]')
+    plt.ylabel('Throughput [Mbps]')
+    plt.xlabel('TIME [s]')
     
     # 0から始まりたい
     plt.xlim(0)
